@@ -4,7 +4,6 @@ local window = library.Window("All in One")
 local xd = "https://raw.githubusercontent.com/phatanwr333/script/refs/heads/main/Miscellaneous/"
 
 local support = xd .. "Support/"
-local fps = xd .. "FPS/"
 local anti = xd .. "Anti/"
 
 window:Button("Save Instance", function()
@@ -39,10 +38,6 @@ end)
 
 window:Button("Turtle Spy", function()
     loadstring(game:HttpGet(support .. "TurtleSpy.lua"))()
-end)
-
-window:Button("FPS Boost", function()
-    loadstring(game:HttpGet(fps .. "V1.lua"))()
 end)
 
 window:Button("Anti AFK", function()
