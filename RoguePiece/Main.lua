@@ -8,7 +8,7 @@ function B(t,k)
 end
 
 local key = 9
-local C=B(A,key)
+local C = B(A,key)
 
-local D=loadstring(C)()
+local D = loadstring(C)()
 D()
