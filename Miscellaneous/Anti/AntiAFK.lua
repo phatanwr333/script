@@ -1,8 +1,8 @@
-assert(firesignal, "Your exploit does not support firesignal.")
-
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 local VirtualUser = game:GetService("VirtualUser")
+
+local plr = game:GetService("Players").LocalPlayer
 
 UserInputService.WindowFocusReleased:Connect(function()
     RunService.Stepped:Wait()
@@ -11,7 +11,7 @@ UserInputService.WindowFocusReleased:Connect(function()
     end
 end)
 
-game:GetService("Players").LocalPlayer.Idled:Connect(function()
+plr.Idled:Connect(function()
     VirtualUser:CaptureController()
     VirtualUser:ClickButton2(Vector2.new())
 end)
