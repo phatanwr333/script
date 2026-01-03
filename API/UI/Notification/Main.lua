@@ -1,3 +1,9 @@
+--[[
+    Modes: Success, Warning, Error, Info
+    
+    NotificationLibrary:SendNotification(Theme, Message, Duration)
+]]
+
 local LibraryName = "Notification Library"
 local NotificationLibrary = {}
 local TweenService = game:GetService("TweenService")
@@ -58,7 +64,7 @@ function NotificationLibrary:SendNotification(Mode, Text, Duration)
                 TweenService:Create(Notification, T3, {Size = UDim2.new(0, 0,0.087, 0)}):Play()
                 
                 task.wait(0.25)
-                
+
                 Notification:Destroy()
             end)
             if not success then
