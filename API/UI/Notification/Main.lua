@@ -1,4 +1,4 @@
-local LibraryName = "Notification Library" -- yes
+local LibraryName = "Notification Library"
 local NotificationLibrary = {}
 local TweenService = game:GetService("TweenService")
 local CoreGui = cloneref(game:GetService("CoreGui"))
