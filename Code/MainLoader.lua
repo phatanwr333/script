@@ -17,4 +17,5 @@ function Execute(url)
     end
 end
 
+if getgenv().SCRIPT_KEY = nil then getgenv().SCRIPT_KEY = "" end
 Execute(ScriptUrl)
