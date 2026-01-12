@@ -1,4 +1,4 @@
-local ScriptUrl = "https://api.junkie-development.de/api/v1/luascripts/public/4dfe5763b0c0c46fcadb29cdd8ebdc771e340dd8ebb75478f3c10d5695207ecc/download"
+local ScriptUrl = "https://api.jnkie.com/api/v1/luascripts/public/4dfe5763b0c0c46fcadb29cdd8ebdc771e340dd8ebb75478f3c10d5695207ecc/download"
 
 if getgenv().SCRIPT_KEY == nil then getgenv().SCRIPT_KEY = "" end
 
