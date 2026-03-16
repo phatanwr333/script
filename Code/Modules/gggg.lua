@@ -1,0 +1,31 @@
+local Players = cloneref(game:GetService("Players"))
+local Workspace = cloneref(game:GetService("Workspace"))
+local Lighting = cloneref(game:GetService("Lighting"))
+local ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"))
+local ReplicatedFirst = cloneref(game:GetService("ReplicatedFirst"))
+local StarterGui = cloneref(game:GetService("StarterGui"))
+local StarterPack = cloneref(game:GetService("StarterPack"))
+local StarterPlayer = cloneref(game:GetService("StarterPlayer"))
+
+local RunService = cloneref(game:GetService("RunService"))
+local TweenService = cloneref(game:GetService("TweenService"))
+local Debris = cloneref(game:GetService("Debris"))
+local CollectionService = cloneref(game:GetService("CollectionService"))
+
+local UserInputService = cloneref(game:GetService("UserInputService"))
+local ContextActionService = cloneref(game:GetService("ContextActionService"))
+local VirtualInputManager = cloneref(game:GetService("VirtualInputManager"))
+local VirtualUser = cloneref(game:GetService("VirtualUser"))
+
+local GuiService = cloneref(game:GetService("GuiService"))
+local CoreGui = cloneref(game:GetService("CoreGui"))
+
+local TeleportService = cloneref(game:GetService("TeleportService"))
+local MarketplaceService = cloneref(game:GetService("MarketplaceService"))
+local HttpService = cloneref(game:GetService("HttpService"))
+local SoundService = cloneref(game:GetService("SoundService"))
+
+local PathfindingService = cloneref(game:GetService("PathfindingService"))
+local ProximityPromptService = cloneref(game:GetService("ProximityPromptService"))
+local TextChatService = cloneref(game:GetService("TextChatService"))
+local Stats = cloneref(game:GetService("Stats"))
