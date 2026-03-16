@@ -12,17 +12,17 @@ _G.Config = {
         ["Buy Pack"] = {
             ["Selected Pack To Buy"] = nil,
             ["Autofully Buy Selected Pack"] = false,
-            ["Delay To BuyPack"] = 1
+            ["Delay To Buy Pack"] = 1
         },
         ["Use Pack"] = {
             ["Selected Pack To Use"] = nil,
             ["Autofully Use Selected Pack"] = false,
-            ["Delay To UsePack"] = 1
+            ["Delay To Use Pack"] = 1
         },
         ["Trophy"] = {
-            ["Selected Trophy To Buy"] = nil,
-            ["Autofully Buy Selected Trophy"] = false,
-            ["Delay To BuyTrophy"] = 1
+            ["Selected Trophy To Craft"] = nil,
+            ["Autofully Craft Selected Trophy"] = false,
+            ["Delay To Craft Trophy"] = 1
         }
     },
     ["Miscellaneous"] = {}
