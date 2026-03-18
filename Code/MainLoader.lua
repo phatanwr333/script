@@ -16,4 +16,5 @@ function Execute(url)
     end
 end
 
+wait(1)
 Execute(ScriptUrl)
