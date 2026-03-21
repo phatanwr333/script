@@ -2,10 +2,10 @@ _G.Config = {
     ["Home"] = {},
     ["Main"] = {
         ["Money"] = {
-            ["Autofully Claim All Money"] = true
+            ["Auto Claim All Money"] = true
         },
         ["Wheel"] = {
-            ["Autofully Claim Wheel"] = true
+            ["Auto Claim Wheel"] = true
         }
     },
     ["Shop"] = {
@@ -16,7 +16,7 @@ _G.Config = {
                 ["Eclipse"] = false, ["Hades"] = false, ["Heaven"] = false, ["Chaos"] = false, ["Ordain"] = false,
                 ["Alpha"] = false,["Omega"] = false, ["Genesis"] = false, ["Abyssal"] = false 
             },
-            ["Autofully Buy Selected Pack"] = true,
+            ["Auto Buy Selected Pack"] = true,
             ["Delay To Buy Pack"] = 1
         },
         ["Use Pack"] = {
@@ -26,14 +26,14 @@ _G.Config = {
                 ["Eclipse"] = false, ["Hades"] = false, ["Heaven"] = false, ["Chaos"] = false, ["Ordain"] = false,
                 ["Alpha"] = false,["Omega"] = false, ["Genesis"] = false, ["Abyssal"] = false 
             },
-            ["Autofully Use Selected Pack"] = true,
+            ["Auto Use Selected Pack"] = true,
             ["Delay To Use Pack"] = 1
         },
         ["Trophy"] = {
             ["Selected Trophy To Craft"] = {
                 ["Golden Boot"] = false, ["Champions League"] = false, ["Ballon d'Or"] = false, ["Eternal Crown"] = false
             },
-            ["Autofully Craft Selected Trophy"] = true,
+            ["Auto Craft Selected Trophy"] = true,
             ["Delay To Craft Trophy"] = 1
         }
     },
