@@ -10,13 +10,28 @@ window:Button("Save Instance", function()
     setclipboard(support .. "SaveIntances.lua")
 end)
 
-window:Button("Copy CFrame", function()
+window:Button("Copy CFrame (Decimal)", function()
     local plr = game.Players.LocalPlayer.Character
     if plr and plr:FindFirstChild("HumanoidRootPart") then
         local pos = plr.HumanoidRootPart.CFrame.Position
         setclipboard(string.format("CFrame.new(%f, %f, %f)", pos.X, pos.Y, pos.Z))
     else
-        warn("humanoidRootPart not found")
+        warn("HumanoidRootPart not found")
+    end
+end)
+
+window:Button("Copy CFrame (No Decimal)", function()
+    local plr = game.Players.LocalPlayer.Character
+    if plr and plr:FindFirstChild("HumanoidRootPart") then
+        local pos = plr.HumanoidRootPart.CFrame.Position
+        
+        local x = math.floor(pos.X)
+        local y = math.floor(pos.Y)
+        local z = math.floor(pos.Z)
+
+        setclipboard(string.format("CFrame.new(%d, %d, %d)", x, y, z))
+    else
+        warn("HumanoidRootPart not found")
     end
 end)
 
