@@ -2104,7 +2104,7 @@ function redzlib:MakeWindow(Configs)
 					FilterOptionsBySearch(SearchInputBox.Text)
 				end)
 			end
-			
+			local UpdatePosition
 			local function ToggleDropdown()
 				if WaitAnim then return end
 				WaitAnim = true
@@ -2125,7 +2125,7 @@ function redzlib:MakeWindow(Configs)
 				WaitAnim = false
 			end
 			
-			local function UpdatePosition()
+			UpdatePosition = function()
 				local framePos = SelectedFrame.AbsolutePosition
 				local screenSize = ScreenGui.AbsoluteSize
 				local newX = math.clamp((framePos.X / UIScale), 0, screenSize.X / UIScale - DropFrame.Size.X.Offset)
