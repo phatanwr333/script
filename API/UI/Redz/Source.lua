@@ -2334,6 +2334,8 @@ function redzlib:MakeWindow(Configs)
        		 		Callback = {val}
     			end
 			end
+			function DropdownObject:GetSelected() return CurrentSelected end
+			return DropdownObject
 		end
  
 		function Tab:AddSlider(Configs)
