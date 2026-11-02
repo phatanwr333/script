@@ -2323,14 +2323,17 @@ function redzlib:MakeWindow(Configs)
 				UpdateDropHeight()
 			end
 			function DropdownObject:Set(val, clear)
-				if type(val) == "table" then
-					for key, val in pairs(val) do AddNewOption(key, val) end
-				elseif type(val) == "function" then
-					Callback = {val}
-				end
+   		 		if type(val) == "table" then
+        			if clear ~= false then
+            			for name in pairs(OptionButtons) do RemoveExistingOption(name) end
+        			end
+        			for key, v in pairs(val) do AddNewOption(key, v) end
+       				UpdateSelectionVisual()
+        			UpdateDropHeight()
+    			elseif type(val) == "function" then
+       		 		Callback = {val}
+    			end
 			end
-			function DropdownObject:GetSelected() return CurrentSelected end
-			return DropdownObject
 		end
  
 		function Tab:AddSlider(Configs)
